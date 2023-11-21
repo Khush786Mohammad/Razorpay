@@ -8,7 +8,8 @@ module.exports = {
       },
       boxShadow:{
         '7xl': 'rgba(0, 0, 0, 0.09) 0px 3px 12px',
-        '99xl': 'rgba(0,0,0,0.1) 0px 0px 42px 22px'
+        '99xl': 'rgba(0,0,0,0.1) 0px 0px 42px 22px',
+        '98xl' : 'rgba(0,0,0,0.1) 15px 15px 60px -32px'
       },
       colors: {
         deepBlue: "#02042a",
@@ -21,7 +22,16 @@ module.exports = {
         grayBlue: "#344a6c",
         deepBlueHead: "#162f56",
         gray2: "#525a76",
-      }
+      },
+      animation:{
+        moveImage:'move 15s linear infinite',
+      },
+      keyframes:{
+        move:{
+          '0%' : {top:'0'},
+          '100%' : {top:'-160%'},
+        }
+      },
     },
   },
   plugins: [],
